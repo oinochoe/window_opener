@@ -8,13 +8,14 @@
 </head>
 <body>
   나는 자식창이야
-  <button type="button" onclick="onCloseSendResultToOpener()"></button>
+  <button type="button" onclick="onCloseSendResultToOpener()">부모창아 이동해라!!</button>
 
   <script>
     function onCloseSendResultToOpener() {
         var childWindow = window.parent;
         var parentWindow = childWindow.opener;
-        parentWindow.location.href = 'https://www.kr.playblackdesert.com/ko-KR/Main/Index'
+        parentWindow.location.href = 'https://www.kr.playblackdesert.com/ko-KR/Main/Index';
+        self.close();
       };
   </script>
 </body>
