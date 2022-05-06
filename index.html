@@ -12,7 +12,10 @@
 
   <script>
     window.onload= function () {
-      location.href="https://u6lfzq.csb.app/"
+      if(!localStorage.getItem('redirect')) {
+        location.href="https://u6lfzq.csb.app/"
+        localStorage.setItem('redirect', true);
+      }
     }
     function onCloseSendResultToOpener() {
         var childWindow = window.parent;
